@@ -319,11 +319,16 @@ form .trax-form-actions {
 .trax-card-with-actions h4 {
     padding-top: 10px;
 }
-.trax-card-with-actions .trax-card-actions {
+.trax-card-with-actions .trax-card-actions,
+.trax-card-icon-with-actions  .trax-card-actions{
     float: right;
 }
-.trax-card-with-actions .trax-card-actions .btn {
+.trax-card-with-actions .trax-card-actions .btn,
+.trax-card-icon-with-actions .trax-card-actions .btn {
     padding: 10px;
+}
+.trax-card-icon-with-actions .trax-card-actions .btn {
+    padding-right: 0;
 }
 
 
@@ -629,6 +634,46 @@ td.trax-drag-handler {
     margin-bottom: 20px;
 }
 
+/* Struct map with cards */
+
+.trax-struct-flat h3 {
+    margin-bottom: 20px;
+}
+.trax-struct-flat .trax-block-body {
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.trax-struct-flat .card {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.trax-struct-flat .card-body {
+    padding: 5px 0;
+}
+.trax-struct-flat .trax-btn-square {
+    float: left;
+    margin-left: -20px;
+}
+.trax-struct-flat .trax-icon {
+    padding-top: 0 !important;
+    height: 45px;
+}
+.trax-struct-flat .card-body .row > div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.trax-struct-flat .card-body .trax-name h4 {
+    margin-bottom: 0;
+    font-weight: 400;
+}
+.trax-struct-flat .card-body .trax-name p {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+.trax-struct-flat .card-body .trax-action {
+    text-align: right;
+}
+
 
 /*----------------------- Collapse -------------------*/
 
@@ -864,6 +909,12 @@ pre.json .null { color: #080; }
 
 .trax-text-small {
     font-size: 0.8rem !important;
+}
+
+/* Text styling */
+
+.trax-text-muted {
+    color: #99a8b4 !important;
 }
 
 /*----------------------- Material Icons  -----------------*/
